@@ -8,7 +8,7 @@
 
 #include "fw/src/mgos_features.h"
 
-#if MGOS_ENABLE_ARDUINO_API && MGOS_ENABLE_SPI
+#if MGOS_ENABLE_SPI
 
 #include <stdint.h>
 
@@ -75,6 +75,6 @@ class SPIImpl {
 
 extern SPIImpl SPI;
 
-#endif /* MGOS_ENABLE_ARDUINO_API && MGOS_ENABLE_SPI */
+#endif /* MGOS_ENABLE_SPI */
 
 #endif /* CS_FW_SRC_ARDUINO_SPI_H_ */
