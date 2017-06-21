@@ -8,13 +8,11 @@
 
 #include "fw/src/mgos_features.h"
 
-#if MGOS_ENABLE_SPI
-
 #include <stdint.h>
 
 #include "Arduino.h"
 
-#include "fw/src/mgos_spi.h"
+#include "mgos_spi.h"
 
 #ifndef LSBFIRST
 #define LSBFIRST 0
@@ -74,7 +72,5 @@ class SPIImpl {
 };
 
 extern SPIImpl SPI;
-
-#endif /* MGOS_ENABLE_SPI */
 
 #endif /* CS_FW_SRC_ARDUINO_SPI_H_ */

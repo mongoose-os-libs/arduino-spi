@@ -7,8 +7,6 @@
 
 #include "mongoose/mongoose.h"
 
-#if MGOS_ENABLE_SPI
-
 SPIImpl SPI;
 
 SPISettings::SPISettings() : clock(1000000), bit_order(MSBFIRST), mode(0) {
@@ -135,5 +133,3 @@ void SPIImpl::writeBytes(const uint8_t *data, uint32_t size) {
   txn.hd.tx_len = size;
   mgos_spi_run_txn(spi_, false /* full_duplex */, &txn);
 }
-
-#endif /* MGOS_ENABLE_SPI */
