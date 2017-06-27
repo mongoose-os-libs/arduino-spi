@@ -27,6 +27,7 @@
 #define SPI_MODE3 0x03
 
 #define SPI_HAS_TRANSACTION 1
+#define SPI_DEFAULT_FREQ 1000000
 
 struct SPISettings {
   SPISettings();

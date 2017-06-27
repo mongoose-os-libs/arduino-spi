@@ -9,7 +9,7 @@
 
 SPIImpl SPI;
 
-SPISettings::SPISettings() : clock(1000000), bit_order(MSBFIRST), mode(0) {
+SPISettings::SPISettings() : clock(SPI_DEFAULT_FREQ), bit_order(MSBFIRST), mode(0) {
 }
 
 SPISettings::SPISettings(uint32_t clock, uint8_t bitOrder, uint8_t mode)
@@ -18,6 +18,7 @@ SPISettings::SPISettings(uint32_t clock, uint8_t bitOrder, uint8_t mode)
 
 SPIImpl::SPIImpl() : spi_(nullptr) {
   memset(&txn_, 0, sizeof(txn_));
+  txn_.freq = SPI_DEFAULT_FREQ;
   txn_.cs = -1; /* CS control is performed externally */
 }
 
