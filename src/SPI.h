@@ -6,7 +6,7 @@
 #ifndef CS_FW_SRC_ARDUINO_SPI_H_
 #define CS_FW_SRC_ARDUINO_SPI_H_
 
-#include "fw/src/mgos_features.h"
+#include "mgos_features.h"
 
 #include <stdint.h>
 
