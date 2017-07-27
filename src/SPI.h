@@ -74,4 +74,6 @@ class SPIImpl {
 
 extern SPIImpl SPI;
 
+/* no_extern_c_check */
+
 #endif /* CS_FW_SRC_ARDUINO_SPI_H_ */
