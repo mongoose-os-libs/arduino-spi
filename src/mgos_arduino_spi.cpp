@@ -5,11 +5,12 @@
 
 #include <SPI.h>
 
-#include "mongoose/mongoose.h"
+#include "mongoose.h"
 
 SPIImpl SPI;
 
-SPISettings::SPISettings() : clock(SPI_DEFAULT_FREQ), bit_order(MSBFIRST), mode(0) {
+SPISettings::SPISettings()
+    : clock(SPI_DEFAULT_FREQ), bit_order(MSBFIRST), mode(0) {
 }
 
 SPISettings::SPISettings(uint32_t clock, uint8_t bitOrder, uint8_t mode)
