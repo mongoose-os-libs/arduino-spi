@@ -15,5 +15,6 @@ tags:
   - arduino
   - c
   - core
+  - docs:arduino:SPI
 
 manifest_version: 2017-09-29
