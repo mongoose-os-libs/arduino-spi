@@ -5,7 +5,7 @@
 
 #include <SPI.h>
 
-#include "mongoose.h"
+#include "mgos.h"
 
 SPIImpl SPI;
 
